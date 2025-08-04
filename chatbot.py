@@ -78,7 +78,7 @@ def main():
             # Run RAG chain for document QA
             answer = qa_chain.invoke(query)
             # print msg only
-            print("AI:", answer.content)
+            print("AI:", answer['result'])
 
 
 if __name__ == "__main__":
